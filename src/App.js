@@ -18,14 +18,14 @@ function App() {
         <p>Lorem ipsum dolor sit amet.</p>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <div>
+            <GoogleLoginButton onClick={() => alert('Hello')}>
+              <span>Sign Up with Google</span>
+            </GoogleLoginButton>
+          </div>
+          <div>
             <FacebookLoginButton onClick={() => alert('Hello')}>
               <span>Sign Up with Facebook</span>
             </FacebookLoginButton>
-          </div>
-          <div>
-            <GoogleLoginButton onClick={() => alert('Hello')}>
-              <span>Sign Up with Facebook</span>
-            </GoogleLoginButton>
           </div>
         </div>
         {/* <div className='google'>
